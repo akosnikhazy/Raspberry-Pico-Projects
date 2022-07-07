@@ -5,14 +5,14 @@
 # setup: https://github.com/akosnikhazy/Raspberry-Pico-Projects/blob/main/random-number-generator.JPG
 # just put the + of a sun collector to PIN26 and the - to one of the GND-s.
 # (please keep in mind the Pico's input voltage limits, use caution and protect the board if needed,
-# I use a small suncollector I got from a calculator to test this idea out)
+# I use a small solarpanel I got from a calculator to test this idea out)
 
 
 from machine import Pin, ADC
 from time import sleep
 
 # PIN 26 measures input voltage
-suncollector = ADC(26)
+solarpanel = ADC(26)
 
 # choose these smartly if your sun collector never
 # goes beyond these values; the result can't be
@@ -21,7 +21,7 @@ min = 0.5
 max = 0.5
 
 while True:
-    measureNow = suncollector.read_u16()* 3.3 / 65536;
+    measureNow = solarpanel.read_u16()* 3.3 / 65536;
      
     if measureNow < min:
         min = measureNow
