@@ -8,11 +8,9 @@ pins = [
     Pin(17,Pin.OUT)
     ]
 
-steptime = 0.001
+steptime = 0.01
 counter = 0.0;
-timelimit = 2;
-
-mode = "cw"; # can be cw or ccw
+maxcount = 128
 
 steps = [
     [1,0,0,0],
@@ -24,13 +22,10 @@ steps = [
 while True:
     for step in steps:
         for i in range(len(pins)):
-            if counter > timelimit:
-                counter = 0
-                steps.reverse() # with this you make it rotate backwards
-            
             pins[i].value(step[i])
             utime.sleep(steptime)
-            counter = counter + steptime
-           
             
-
+    if counter >=maxcount:
+        counter = 0
+        steps.reverse()           
+    counter = counter + 1
