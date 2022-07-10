@@ -18,5 +18,4 @@ This is my very basic setup: solar panel's + on PIN26, - on one of the GND. If y
 ## Basic Stepper Motor controller
 ([basic-stepper-motor.py](https://github.com/akosnikhazy/Raspberry-Pico-Projects/blob/main/basic-stepper-motor.py))
 
-A very basic stepper motor script I used to test how it all works. It is based on [this video](https://www.youtube.com/watch?v=gyqOETtpINg)
-The video didn't help me understand how to turn the motor in another way. Then I understood the numbers [0,0,0,1] represent the electromagnets in the motor.
+A very basic stepper motor script I used to test how it all works. It is based on [this video](https://www.youtube.com/watch?v=gyqOETtpINg). The video didn't help me understand how to turn the motor in another way. Then I understood the numbers [0,0,0,1] represent the electromagnets in the motor. So the order you turn them on makes it move in one way or the another.
