@@ -6,3 +6,7 @@ Im thos repo I collect my Raspberry Pi Pico code, I will list all of them in thi
 
 This is my very basic setup: solar panel's + on PIN26, - on one of the GND. If you use bigger solar panel protect your board!
 ![Raspberry Pico with solar panel](https://raw.githubusercontent.com/akosnikhazy/Raspberry-Pico-Projects/main/random-number-generator.JPG)
+
+# basic-stepper-motor.py
+A very basic stepper motor script I used to test how it all works. It is based on [this video](https://www.youtube.com/watch?v=gyqOETtpINg)
+The video didn't help me understand how to turn the motor in another way. Then I understood the numbers [0,0,0,1] represent the electromagnets in the motor.
