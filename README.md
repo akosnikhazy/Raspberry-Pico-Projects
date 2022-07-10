@@ -4,6 +4,7 @@ In this repo I collect my Raspberry Pi Pico code, I will list all of them in thi
 ## Table of contents
 1. [Random Number Generator](#random-number-generator)
 2. [Basic Stepper Motor controller](#basic-stepper-motor-controller)
+3. [Stepper Motor forward and back](#stepper-motor-goes-forward-and-back)
 
 
 ## Random Number Generator
@@ -19,3 +20,9 @@ This is my very basic setup: solar panel's + on PIN26, - on one of the GND. If y
 ([basic-stepper-motor.py](https://github.com/akosnikhazy/Raspberry-Pico-Projects/blob/main/basic-stepper-motor.py))
 
 A very basic stepper motor script I used to test how it all works. It is based on [this video](https://www.youtube.com/watch?v=gyqOETtpINg). The video didn't help me understand how to turn the motor in another way. Then I understood the numbers [0,0,0,1] represent the electromagnets in the motor. So the order you turn them on makes it move in one way or the another.
+
+## Stepper Motor Goes Forward and Back
+([stepper-forward-and-back.py](https://github.com/akosnikhazy/Raspberry-Pico-Projects/blob/main/stepper-forward-and-back.py))
+
+By reversing the step list runtime you can make the motor go in the other way. First I thought about using a flag and and `if` to use two set of steps. But reversing the array runtime make it step perfect. Also more elegant and the code is shorter.
+
