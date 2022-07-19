@@ -8,9 +8,6 @@
 from machine import Pin
 import utime
 
-def isPressed(b):
-    return not buttons[b].value()
-
 # time between steps of the motor
 steptime = 0.001
 
@@ -20,7 +17,6 @@ steptime = 0.001
 # too long it will change direction back
 counter = 0
 maxcount = 30
-turningback = False # while true it can't change direction
 
 # the two buttons
 buttons = [
@@ -50,16 +46,12 @@ while True:
             utime.sleep(steptime)
     
     # if any of the buttons are pressed and we are not turning
-    if (isPressed(0) or isPressed(1)) and not turningback:
-        turningback = not turningback
+    if (not buttons[0].value() or not buttons[1].value()) and counter == 0:
+        counter = counter + 1
         motorsteps.reverse()        
     
     # if we are turning back wait a little before we can turn again
-    if turningback:
+    if counter > 0:
         counter = counter + 1
         if counter >= maxcount:
-            turningback = not turningback
             counter = 0
-
-
-
