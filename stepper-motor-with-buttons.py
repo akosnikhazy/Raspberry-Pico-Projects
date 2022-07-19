@@ -5,7 +5,7 @@
 # button pins are 12 and 13
 # motor pins are 14 15 16 17
 
-from machine import Pin
+rom machine import Pin
 import utime
 
 # time between steps of the motor
@@ -47,11 +47,11 @@ while True:
     
     # if any of the buttons are pressed and we are not turning
     if (not buttons[0].value() or not buttons[1].value()) and counter == 0:
-        counter = counter + 1
+        counter += 1
         motorsteps.reverse()        
     
     # if we are turning back wait a little before we can turn again
     if counter > 0:
-        counter = counter + 1
+        counter += 1
         if counter >= maxcount:
             counter = 0
