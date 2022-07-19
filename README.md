@@ -26,3 +26,8 @@ A very basic stepper motor script I used to test how it all works. It is based o
 
 By reversing the step list runtime you can make the motor go in the other way. First I thought about using a flag and and `if` to use two set of steps. But reversing the array runtime make it step perfect. Also more elegant and the code is shorter.
 
+## Stepper Motor reverse movement on button press
+([stepper-motor-with-buttons.py](https://github.com/akosnikhazy/Raspberry-Pico-Projects/blob/main/stepper-motor-with-buttons.py))
+
+This script reverse the stepper motor's movement on any of the two button's press. The idea is the motor will have an arm that presses any of the two buttons while rotating this way it can not go more than 360° so the cables attached to the motor wont spool.
+
