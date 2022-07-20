@@ -5,7 +5,7 @@
 # button pins are 12 and 13
 # motor pins are 14 15 16 17
 
-rom machine import Pin
+from machine import Pin
 import utime
 
 # time between steps of the motor
