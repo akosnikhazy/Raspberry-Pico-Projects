@@ -6,6 +6,7 @@ In this repo I collect my Raspberry Pi Pico code, I will list all of them in thi
 2. [Basic Stepper Motor controller](#basic-stepper-motor-controller)
 3. [Stepper Motor forward and back](#stepper-motor-goes-forward-and-back)
 4. [Stepper Motor Reverse Movement on Button Press](#stepper-motor-reverse-movement-on-button-press)
+5. [Rotate Stepper Motor on Light Difference](#rotate-stepper-motor-on-light-difference)
 
 
 ## Random Number Generator
@@ -35,3 +36,7 @@ This script reverses the stepper motor's movement on any of the two buttons pres
 The setup is easy. You connect the buttons to pins 12 and 13 and ground. The motor is connected to the Pico with stepper motor controller on pins 14,15,16,17 and the controllers gots power from the Pico's 3v3out pin (also its - is on a Pico's GND)
 ![Raspberry Pico with solar panel](https://raw.githubusercontent.com/akosnikhazy/Raspberry-Pico-Projects/main/readme-images/stepper-motor-with-buttons.jpg)
 
+## Rotate Stepper Motor on Light Difference
+([rotate-on-light-difference.py](https://github.com/akosnikhazy/Raspberry-Pico-Projects/blob/main/rotate-on-light-difference.py))
+
+This is a mix of two other projects. Please read the [Random Number Generator](#random-number-generator)'s description about how to connect the solar panel to the Pico. The only difference is this uses two solar panels, so you have to do the same with PIN27 too. The idea is to rotate the motor toward the light so it gets maximum power input.
