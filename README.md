@@ -7,6 +7,7 @@ In this repo I collect my Raspberry Pi Pico code, I will list all of them in thi
 3. [Stepper Motor forward and back](#stepper-motor-goes-forward-and-back)
 4. [Stepper Motor Reverse Movement on Button Press](#stepper-motor-reverse-movement-on-button-press)
 5. [Rotate Stepper Motor on Light Difference](#rotate-stepper-motor-on-light-difference)
+6. [Light-o-Meter](#light-o-meter)
 
 
 ## Random Number Generator
@@ -34,9 +35,17 @@ By reversing the step list runtime you can make the motor go in the other way. F
 This script reverses the stepper motor's movement on any of the two buttons press. The idea is the motor will have an arm that presses any of the two buttons while rotating this way it can not go more than 360° so the cables attached to the motor won't spool.
 
 The setup is easy. You connect the buttons to pins 12 and 13 and ground. The motor is connected to the Pico with stepper motor controller on pins 14,15,16,17 and the controllers gots power from the Pico's 3v3out pin (also its - is on a Pico's GND)
+
 ![Raspberry Pico with solar panel](https://raw.githubusercontent.com/akosnikhazy/Raspberry-Pico-Projects/main/readme-images/stepper-motor-with-buttons.jpg)
 
 ## Rotate Stepper Motor on Light Difference
 ([rotate-on-light-difference.py](https://github.com/akosnikhazy/Raspberry-Pico-Projects/blob/main/rotate-on-light-difference.py))
 
 This is a mix of two other projects. Please read the [Random Number Generator](#random-number-generator)'s description about how to connect the solar panel to the Pico. The only difference is this uses two solar panels, so you have to do the same with PIN27 too. The idea is to rotate the motor toward the light so it gets maximum power input.
+
+## Light-o-Meter
+([light-o-meter.py](https://github.com/akosnikhazy/Raspberry-Pico-Projects/blob/main/light-o-meter.py))
+
+This simple script turns on a red, a green, or a yellow LED based on the voltage input of the solar panel. Pin 18, 19 and 20 are the LEDs. Pin 28 measures the solar panel's voltage. As I use a small and weak solar panel I got from a calculator, I did not protect the board from it, but if you use a stronger one please be safe with it.
+
+![The Light-o-Meter](https://raw.githubusercontent.com/akosnikhazy/Raspberry-Pico-Projects/main/readme-images/light-o-meter.jpg)
