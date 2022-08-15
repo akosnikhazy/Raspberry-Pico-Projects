@@ -8,6 +8,7 @@ In this repo I collect my Raspberry Pi Pico code, I will list all of them in thi
 4. [Stepper Motor Reverse Movement on Button Press](#stepper-motor-reverse-movement-on-button-press)
 5. [Rotate Stepper Motor on Light Difference](#rotate-stepper-motor-on-light-difference)
 6. [Light-o-Meter](#light-o-meter)
+7. [Bin-Counter](#bin-counter)
 
 
 ## Random Number Generator
@@ -49,3 +50,8 @@ This is a mix of two other projects. Please read the [Random Number Generator](#
 This simple script turns on a red, a green, or a yellow LED based on the voltage input of the solar panel. Pin 18, 19 and 20 are the LEDs. Pin 28 measures the solar panel's voltage. As I use a small and weak solar panel I got from a calculator, I did not protect the board from it, but if you use a stronger one please be safe with it.
 
 ![The Light-o-Meter](https://raw.githubusercontent.com/akosnikhazy/Raspberry-Pico-Projects/main/readme-images/light-o-meter.jpg)
+
+## Bin Counter
+([bin-counter.py](https://github.com/akosnikhazy/Raspberry-Pico-Projects/blob/main/bin-counter.py))
+
+This is a binary counter, because I have LEDs and wanted to make something simple. It turned out there is no zfill in MicroPython so I worked around that padding list with list. It is not the best solution for sure. 
