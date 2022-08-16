@@ -26,7 +26,7 @@ while True:
     for i in range(0,8-len(num_now)):
        padding_list.append('0');
        
-    # so I padding the list instead with another list mad up from zeroes
+    # so I padding the list instead with another list made up from zeroes
     num_now = padding_list + num_now
     
     # so I can use this loop to switch leds on PINs
