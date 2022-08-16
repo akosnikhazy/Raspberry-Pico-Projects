@@ -2,6 +2,9 @@
 # The point of this whole repository is me learning Raspberry Pico and MicroPython. 
 # I write every code on the fly. Then later I try to optimize and rewrite.
 
+# made a second better verison too: 
+# https://github.com/akosnikhazy/Raspberry-Pico-Projects/blob/main/bin-counter2.py
+
 from machine import Pin
 from time import sleep
 
