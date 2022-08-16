@@ -53,5 +53,8 @@ This simple script turns on a red, a green, or a yellow LED based on the voltage
 
 ## Bin Counter
 ([bin-counter.py](https://github.com/akosnikhazy/Raspberry-Pico-Projects/blob/main/bin-counter.py))
+([bin-counter2.py](https://github.com/akosnikhazy/Raspberry-Pico-Projects/blob/main/bin-counter2.py))
 
-This is a binary counter, because I have LEDs and wanted to make something simple. It turned out there is no zfill in MicroPython so I worked around that padding list with list. It is not the best solution for sure. Setup is simple: PINs 0-7 are LEDs. 
+This is a binary counter, because I have LEDs and wanted to make something simple. It turned out there is no zfill in MicroPython so I worked around that padding list with list. It is not the best solution for sure. Setup is simple: PINs 0-7 are LEDs.
+
+The second one is a better version, without making string bin() string form numbers. I straight away make a list and toggle the LEDs based on that.
