@@ -1,3 +1,7 @@
+# disclaimer: this is far from the best, most optimal solution. It is just a solution. 
+# The point of this whole repository is me learning Raspberry Pico and MicroPython. 
+# I write every code on the fly. Then later I try to optimize and rewrite.
+
 from machine import Pin
 from time import sleep
 
@@ -18,7 +22,7 @@ counter = 0
 
 while True:
     
-    # list of bits from converted int to bin to string
+    # list of bits converted from int to bin to string
     num_now = list(str(bin(counter)[2:]))
     
     # zfill is not present in micropython :)
