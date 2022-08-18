@@ -2,6 +2,8 @@
 # so I felt the urge to make another. I still wanted to use
 # list of bits.
 
+# The last version: https://github.com/akosnikhazy/Raspberry-Pico-Projects/blob/main/bin-counter2.py
+
 from machine import Pin
 from time import sleep
 
