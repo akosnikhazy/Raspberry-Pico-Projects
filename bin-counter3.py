@@ -2,6 +2,8 @@
 # dropped the bin converter function, and instantly switches
 # the LEDs
 
+# Update: not the last. https://github.com/akosnikhazy/Raspberry-Pico-Projects/blob/main/bin-counter4.py
+
 from machine import Pin
 from time import sleep
 
