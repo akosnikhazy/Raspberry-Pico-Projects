@@ -64,4 +64,5 @@ The second one is a better version, without making string bin() string form numb
 The third version I dropped the bin function, built it in the main loop and switch LEDs on creting the binary number
 
 The third was the last version but then I realized I do not need the list of pins :)
+
 ![Binary Counter in action](https://raw.githubusercontent.com/akosnikhazy/Raspberry-Pico-Projects/main/readme-images/bin-counter.gif)
