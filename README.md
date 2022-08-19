@@ -61,3 +61,5 @@ This is a binary counter, because I have LEDs and wanted to make something simpl
 The second one is a better version, without making string bin() string form numbers. I straight away make a list and toggle the LEDs based on that.
 
 The third version I dropped the bin function, built it in the main loop and switch LEDs on creting the binary number
+
+![Binary Counter in action](https://raw.githubusercontent.com/akosnikhazy/Raspberry-Pico-Projects/main/readme-images/bin-counter.gif)
