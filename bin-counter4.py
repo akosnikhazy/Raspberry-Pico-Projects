@@ -19,4 +19,4 @@ while True:
             Pin(i,Pin.OUT).value(0)
 
     # so we see what happens.
-    sleep(0.01)
+    sleep(0.25)
