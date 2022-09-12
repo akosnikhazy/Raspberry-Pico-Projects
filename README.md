@@ -9,6 +9,7 @@ In this repo I collect my Raspberry Pi Pico code, I will list all of them in thi
 5. [Rotate Stepper Motor on Light Difference](#rotate-stepper-motor-on-light-difference)
 6. [Light-o-Meter](#light-o-meter)
 7. [Bin-Counter](#bin-counter)
+8. [Pong](#pong)
 
 
 ## Random Number Generator
@@ -66,3 +67,12 @@ The third version I dropped the bin function, built it in the main loop and swit
 The third was the last version but then I realized I do not need the list of pins :)
 
 ![Binary Counter in action](https://raw.githubusercontent.com/akosnikhazy/Raspberry-Pico-Projects/main/readme-images/bin-counter.gif)
+
+## Pong
+([pong.py](https://github.com/akosnikhazy/Raspberry-Pico-Projects/blob/main/pong.py))
+
+After the bin counter I realized I could make a pong game from the row of LEDs. So I made this. It is basic, it lacks protection from players spamming or holding down the buttons, also no restart functionality. I just wanted to see the concept work. Call it a pre-alpha game.
+
+The setup is the same as at the bin counter but with two more LEDs for goals, and two switches for player input. You start the game by pressing the player 1 input.
+![Pong](https://raw.githubusercontent.com/akosnikhazy/Raspberry-Pico-Projects/main/readme-images/pong.jpg)
+
