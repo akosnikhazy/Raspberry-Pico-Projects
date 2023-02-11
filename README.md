@@ -10,7 +10,7 @@ In this repo I collect my Raspberry Pi Pico code, I will list all of them in thi
 6. [Light-o-Meter](#light-o-meter)
 7. [Bin-Counter](#bin-counter)
 8. [Pong](#pong)
-
+9. [Measure Voltage](#measure-voltage-show-with-leds)
 
 ## Random Number Generator
 
@@ -75,4 +75,9 @@ After the bin counter I realized I could make a pong game from the row of LEDs. 
 
 The setup is the same as at the bin counter but with two more LEDs for goals, and two switches for player input. You start the game by pressing the player 1 input.
 ![Pong](https://raw.githubusercontent.com/akosnikhazy/Raspberry-Pico-Projects/main/readme-images/pong.jpg)
+
+## Measure Voltage Show With LEDs
+([mesure-voltage-leds.py](https://github.com/akosnikhazy/Raspberry-Pico-Projects/blob/main/mesure-voltage-leds.py))
+
+This was a very fast idea, solved in 30 minutes. Using ADC 26 I measure the voltage of 1.2V battery. The more the charge the more LEDs light up. 
 
