@@ -26,7 +26,7 @@ while True:
 
    zi = (measurement - minimum) / (maximum - minimum) * 100
    
-   #very lazy
+   # very lazy
    if zi > 12.5:
        leds[0].value(1)
        
