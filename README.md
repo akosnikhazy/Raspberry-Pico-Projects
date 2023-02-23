@@ -79,5 +79,5 @@ The setup is the same as at the bin counter but with two more LEDs for goals, an
 ## Measure Voltage Show With LEDs
 ([mesure-voltage-leds.py](https://github.com/akosnikhazy/Raspberry-Pico-Projects/blob/main/mesure-voltage-leds.py))
 
-This was a very fast idea, solved in 30 minutes. Using ADC 26 I measure the voltage of 1.2V battery. The more the charge the more LEDs light up. 
+This was a very quick idea, solved in 30 minutes. With the ADC 26 I measure the voltage of a 1.2V battery. The higher the charge, the more LEDs light up. In theory. My setup was bad for this. This is a failed project.
 
